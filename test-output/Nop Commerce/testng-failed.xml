@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Nop Commerce]">
+  <test thread-count="5" name="Run On CHROME UI(failed)">
+    <parameter name="browser" value="chrome_ui"/>
+    <parameter name="url" value="https://www.amazon.com.au/"/>
+    <classes>
+      <class name="testcases.Buy_Product">
+        <methods>
+          <include name="TC_01_Buy_Product"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testcases.Buy_Product -->
+    </classes>
+  </test> <!-- Run On CHROME UI(failed) -->
+</suite> <!-- Failed suite [Nop Commerce] -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nop Commerce" parallel="false">
+
+  <test name="Run On CHROME UI">
+  <parameter name="browser" value="chrome_ui"/>
+  <parameter name="url" value="https://www.amazon.com.au/"/>
+    <classes>
+      <class name="testcases.Buy_Product"/>
+    </classes>
+  </test>
+</suite> 
+
