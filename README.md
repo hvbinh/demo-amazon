@@ -6,4 +6,4 @@
 
 Report in : /test-output/emailable-report.html
 
-Notes: develop in Windown OS
+Notes: develop in Windows OS

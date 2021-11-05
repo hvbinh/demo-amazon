@@ -28,7 +28,7 @@ public class TodayDealPO extends AbstractPage{
 
 	public ItemDetailPO clickToSecondItem() {
 
-		for(int i =4;i<12;i++)
+		for(int i =2;i<12;i++)
 		{
 			waitToElementClickable(driver, TodayDealPageUI.SECOND_ITEM,i+"");
 			clickToElement(driver, TodayDealPageUI.SECOND_ITEM,i+"");
