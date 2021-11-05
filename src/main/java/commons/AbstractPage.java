@@ -520,15 +520,13 @@ public class AbstractPage {
 	protected double getPrice(String price)
 	{
 
-		return Double.parseDouble(price.replace("$", ""));
+		return Double.parseDouble(price.replace("$", "").trim());
 
 	}
 	protected double getFormatPrice(double price)
 	{
 
-		DecimalFormat df = new DecimalFormat("#.##");
-		df.setRoundingMode(RoundingMode.CEILING);
-		return Double.parseDouble(df.format(price));
+		return  (double)Math.round(price * 100) / 100;
 
 	}
 

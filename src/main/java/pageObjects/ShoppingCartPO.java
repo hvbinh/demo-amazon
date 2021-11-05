@@ -15,6 +15,7 @@ public class ShoppingCartPO extends AbstractPage{
 
 
 	public String getItemQuantity(String itemTitle) {
+		sleepInSecond(2);
 		waitToElementVisible(driver, ShoppingCartPageUI.ITEM_QUANTITY,itemTitle);
 		return getElementText(driver, ShoppingCartPageUI.ITEM_QUANTITY,itemTitle);
 	}

@@ -79,7 +79,8 @@ public class Buy_Product extends AbstractTest{
 		Assert.assertEquals(shoppingCartPage.getItemPrice(itemTitle2), itemPrice2);
 
 		//verify total price
-        double total = itemPrice1*2+itemPrice2*5;
+        double total = (itemPrice1*2)+(itemPrice2*5);
+        System.out.println("total:" +total);
 		Assert.assertEquals(shoppingCartPage.getTotalPrice(), shoppingCartPage.formatNumber(total));
 
 		//edit first item to 1
@@ -98,7 +99,7 @@ public class Buy_Product extends AbstractTest{
 		Assert.assertEquals(shoppingCartPage.getItemPrice(itemTitle2), itemPrice2);
 
 		//verify total price
-		total = itemPrice1+itemPrice2*3;
+		total = itemPrice1+(itemPrice2 * 3);
 		Assert.assertEquals(shoppingCartPage.getTotalPrice(), shoppingCartPage.formatNumber(total));
 
 		//delete item 1
@@ -109,7 +110,7 @@ public class Buy_Product extends AbstractTest{
 		Assert.assertEquals(shoppingCartPage.getItemPrice(itemTitle2), itemPrice2);
 
 		//verify total price
-		total = itemPrice2*3;
+		total = itemPrice2* 3;
 		Assert.assertEquals(shoppingCartPage.getTotalPrice(), shoppingCartPage.formatNumber(total));
 
 		//click to proceed to checkout
@@ -134,7 +135,7 @@ public class Buy_Product extends AbstractTest{
 
 	@AfterClass
 	public void afterClass() {
-		//closeBrowserAndDriver(driver);
+		closeBrowserAndDriver(driver);
 	}
 
 }
