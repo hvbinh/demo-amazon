@@ -52,8 +52,8 @@ public class DashboardPO extends AbstractPage{
 
 		for(int i =1;i<listItem.size();i++)
 		{
-			waitToElementVisible(driver, DashboardPageUI.ITEM_TITLE, i+"");
-			getElement(driver, DashboardPageUI.ITEM_TITLE, i+"").click();
+			waitToElementVisible(driver, DashboardPageUI.ITEM_PRICE_SYMBOL, i+"");
+			getElement(driver, DashboardPageUI.ITEM_PRICE_SYMBOL, i+"").click();
 			if(isElementUndisplayed(driver, ItemDetailPageUI.QUANTITY_DROPDOWN)==true)
 			{
 				backToPage(driver);

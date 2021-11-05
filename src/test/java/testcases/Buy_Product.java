@@ -135,7 +135,7 @@ public class Buy_Product extends AbstractTest{
 
 	@AfterClass
 	public void afterClass() {
-		closeBrowserAndDriver(driver);
+		//closeBrowserAndDriver(driver);
 	}
 
 }

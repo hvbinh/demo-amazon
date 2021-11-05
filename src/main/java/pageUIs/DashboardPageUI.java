@@ -9,7 +9,7 @@ public class DashboardPageUI {
 	public static final String BATTERY_ITEM = "//div[@data-index='%s']//span[@class='a-size-base-plus a-color-base a-text-normal']";
 	public static final String LEFT_FEW_IN_STOCK = "//span[contains(text(),'left in stock.')]";
 	public static final String ITEM_LIST = "//div[contains(@data-component-type,'search-result')]";
-	public static final String ITEM_TITLE = "(//div[contains(@data-component-type,'search-result')])[%s]//span[contains(@class,'a-text-normal')]";
+	public static final String ITEM_PRICE_SYMBOL = "(//div[contains(@data-component-type,'search-result')])[%s]//span[contains(@class,'price-symbol')]";
 	public static final String OUT_OF_STOCK_TEXT = "//span[contains(text(),'Temporarily out of stock.')]";
 
 
