@@ -58,7 +58,7 @@ public class Buy_Product extends AbstractTest{
 
 		dashboardPage.sort("Newest Arrivals");
 
-		itemDetailPage = dashboardPage.clickToBatteryItem(); // can sua chay ko on dinh
+		itemDetailPage = dashboardPage.clickToBatteryItem();
 
 		itemTitle2 = itemDetailPage.getItemTitle();
 
